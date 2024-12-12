@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pastee Lunch</title>
+    <link rel="icon" href="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.15752-9/462645432_2278241859209808_706359030160949057_n.png?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEzDsObQRzruNoIY4nCuC0il9fuKbav9PSX1-4ptq_09ObFblvR2ckBUmv2TGrAIr5apvRQtt2n9GtajIF2_d4V&_nc_ohc=ACONuqeDU0MQ7kNvgEwRz1K&_nc_zt=23&_nc_ht=scontent.fmnl4-6.fna&oh=03_Q7cD1QHuxm9mtNN7dlB_Zceh1pMouu_OUoFdWja5KHz-RN0Bcw&oe=677F1057" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        nav {
+            background-color: #8a6851;
+        }
+
+        .recipe-img {
+            height: 300px;
+            width: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .recipe-img:hover {
+            transform: scale(1.1);
+            z-index: 2;
+        }
+
+        .recipe-card {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container1 {
+            background-color: rgba(222, 170, 121, 0.7);
+            width: 800px;
+            border-radius: 40px;
+        }
+
+        .lucasreyes {
+            transition: 0.3s;
+        }
+        .lucasreyes:hover {
+            transform: scale(1.05);
+            z-index: 2;
+            transition: 0.1;
+        }
+
+        .navbar-brand img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .navbar-nav .nav-link {
+            color: black;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f8f9fa;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.15752-9/462645432_2278241859209808_706359030160949057_n.png?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEzDsObQRzruNoIY4nCuC0il9fuKbav9PSX1-4ptq_09ObFblvR2ckBUmv2TGrAIr5apvRQtt2n9GtajIF2_d4V&_nc_ohc=ACONuqeDU0MQ7kNvgEwRz1K&_nc_zt=23&_nc_ht=scontent.fmnl4-6.fna&oh=03_Q7cD1QHuxm9mtNN7dlB_Zceh1pMouu_OUoFdWja5KHz-RN0Bcw&oe=677F1057" alt="Logo">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="breakfast.html">Breakfast</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lunch.html">Lunch</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dinner.html">Dinner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dessertsandbeverages.html">Desserts and Beverages</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control" type="text" placeholder="Search...">
+                    <button class="btn btn-warning" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main class="container mt-5 pt-5">
+        <div class="row d-flex justify-content-center">
+            <!-- Croissant -->
+            <div class="col-md-3 recipe-card">
+                <img src="https://www.olgainthekitchen.com/wp-content/uploads/2018/12/Smoked-Salmon-Tea-Sandwiches-Recipe.jpg" alt="Smoked salmon" class="recipe-img">
+                <button class="btn btn-warning mt-3" onclick="showRecipe('recipeTable1')">Smoked Salmon Recipe</button>
+                <div id="recipeTable1" class="mt-3" style="display: none;">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Ingredients</th>
+                                <th>Quantity</th>
+                                <th>Instructions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Long French baguette</td>
+                                <td>Long</td>
+                                <td>Slice bread into 1/3” thick slices.</td>
+                            </tr>
+                            <tr>
+                                <td>Smoked salmon</td>
+                                <td>Salmon</td>
+                                <td>In a small bowl, mix the spread ingredients: freshly chopped dill. Mash it all together with a fork.</td>
+                            </tr>
+                            <tr>
+                                <td>Cream cheese</td>
+                                <td>7 oz </td>
+                                <td>Spread about 1 tsp of the cream cheese mixture over each bread slice. Top with a piece of salmon and garnish with fresh parsley.</td>
+                            </tr>
+                            <tr>
+                                <td>Sour cream</td>
+                                <td>2 tbsp </td>
+                                <td>Put a plastic wrap between the layers so that the bread of top layer doesn’t get soggy. Eat right away or refrigirate.</td>
+                            </tr>
+                            <tr>
+                                <td>Fresh dill</td> 
+                            </tr>
+                            <tr>
+                                <td>Parsley</td>
+                            </tr>
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-md-3 recipe-card">
+                <img src="https://panlasangpinoy.com/wp-content/uploads/2010/06/burger-steak-1.jpg" alt="Pancakes" class="recipe-img">
+                <button class="btn btn-warning mt-3" onclick="showRecipe('recipeTable2')">Burger Steak Recipe</button>
+                <div id="recipeTable2" class="mt-3" style="display: none;">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Ingredients</th>
+                                <th>Quantity</th>
+                                <th>Instructions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ground beef</td>
+                                <td>1 lb.</td>
+                                <td>Make the beef patties by combining ground beef, onion powder, garlic powder, ground black pepper, and egg. Grate 1 piece of Knorr beef cube. Mix everything together.</td>
+                            </tr>
+                            <tr>
+                                <td>Onion powder</td>
+                                <td>1 teaspoon</td>
+                                <td>Make the patties by scooping around ¼ cup of the meat mixture. Mold it into ball shaped figures and then flatten.</td>
+                            </tr>
+                            <tr>
+                                <td>Knorr Beef Cube</td>
+                                <td>1 piece</td>
+                                <td>Heat 2 tablespoons cooking oil in a pan. Fry one side of the patties in medium heat until it browns. Turn it over and do the same procedure to the opposite side. Remove from the pan. Set it aside.</td>
+                            </tr>
+                            <tr>
+                                <td>Bread Crums</td>
+                                <td>1/2 cup</td>
+                                <td>Add onion powder, garlic powder, ground black pepper, and Knorr Liquid Seasoning. Cook for 30 seconds.</td>
+                            </tr>
+                            <tr>
+                                <td>Garlic Powder</td>
+                                <td>1/2 teaspoon</td>
+                                <td>Arrange beef patties over a cup of steamed rice and then pour beef gravy all over.</td>
+                            </tr>
+                            <tr>
+                                <td>Egg (beaten)</td>
+                                <td>1 large egg</td>
+                                <td>Top with chopped parsley, Serve warm and enjoy!</td>
+                            </tr>
+                            <tr>
+                                <td>Ground black pepper</td>
+                                <td>1/4 teaspoon</td>
+                                <td>Gravy Recipe below:</td>
+                            </tr>
+                            <tr>
+                                <td>Cooking oil</td>
+                                <td>1/4 Cup</td>
+                                <td>Melt butter in a saucepan. Add all-purpose flour. Cook in medium heat while stirring for 8 minutes to make a brown roux. Then, add Knorr Beef Cube. Stir until melted.</td>
+                            </tr>
+                             <tr>
+                                <td>Chopped Parsley</td>
+                                <td>2 Tablespoons</td>
+                                <td>Pour water into the saucepan. Stir until well blended. Note: you will notice that the mixture slowly gets thicker in time</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-md-3 recipe-card">
+                <img src="https://panlasangpinoy.com/wp-content/uploads/2009/09/Pancit-Palabok-jpg.webp" alt="Pansit palabok" class="recipe-img">
+                <button class="btn btn-warning mt-3" onclick="showRecipe('recipeTable3')">Pansit Palabok Recipe</button>
+                <div id="recipeTable3" class="mt-3" style="display: none;">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Ingredients</th>
+                                <th>Quantity</th>
+                                <th>Instructions</th>
+                                <th>Toppings</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bihon (rice noodles)</td>
+                                <td>1 pack</td>
+                                <td>Pour 2 to 3 quarts water in a large mixing bowl or pot. Soak the palabok noodles in water for 30 minutes (or follow the package instructions).</td>
+                                <td>Boiled eggs</td>
+                            </tr>
+                            <tr>
+                                <td>Annatto powder for color</td>
+                                <td>1 tablespoon, mixed with 2 tablespoons water.</td>
+                                <td>Remove the soaked noodles from the bowl and set aside.</td>
+                                <td>Scallions</td>
+                            </tr>
+                            <tr>
+                                <td>Ground pork</td>
+                                <td> ½ pound</td>
+                                <td>Meanwhile, pour the water in a large cooking pot. Let boil.</td>
+                                <td>Crushed chicharon</td>
+                            </tr>
+                            <tr>
+                                <td>Seafood stock or pork broth</td>
+                                <td>3 cups</td>
+                                <td>Put the noodles into the pot. Cook for 10 to 15 minutes or until soft. Remove noodles from the pot and drain the excess water. Place the noodles in a large bowl and cover it (this will prevent it from being exposed in air, which can eventually dry the noodles). Set aside.</td>
+                                <td>Tinapa flakes</td>
+                            </tr>
+                            <tr>
+                                <td>Shrimp bouillon cube (optional if using fresh shrimp)</td>
+                                <td>1 cube</td>
+                                <td>Add shrimp on the same pot with boiling water. Cook for 1 ½ minutes or until it floats. Remove from the pot and set aside.
+                                Put the Napa cabbage into the pot. Boil for 1 minute. Remove and set aside.
+                                Prepare the sauce by pouring oil in a clean cooking pot.
+                                Once the oil gets hot, add the pork. Sauté until light brown</td>
+                                <td>Cooked shrimp</td>
+                            </tr>
+                            <tr>
+                                <td>All-purpose flour</td>
+                                <td>6 tablespoons</td>
+                                <td>Pour fish sauce into the pot along with the annatto water. Stir.
+                                Pour 3 ½ cups water into the pot and let it boil.</td>
+                                <td>calamansi</td>
+                            </tr>
+                            <tr>
+                                <td>Fish sauce (patis)</td>
+                                <td>1 tablespoon</td>
+                                <td>Cover the pot and continue to cook in medium heat for 15 to 18 minutes or until the pork gets tender. Note: If needed, you can add more water to prevent the sauce from drying out.</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Garlic and onions (insert cooking oil)</td>
+                                <td>5 minced cloves</td>
+                                <td>Assemble the palabok by placing noodles in a plate. Pour the sauce over the noodles and then top with Napa cabbage, shrimp, and sliced boiled eggs. Sprinkle crushed chicharon and chopped scallions on top.</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Salt and pepper</td>
+                                <td>¼ teaspoon each</td>
+                                <td>Serve with calamansi or lime and enjoy!</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        function showRecipe(id) {
+            const recipeTable = document.getElementById(id);
+            recipeTable.style.display = recipeTable.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

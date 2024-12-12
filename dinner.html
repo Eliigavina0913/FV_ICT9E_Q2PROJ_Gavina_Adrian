@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pastee Dinner</title>
+    <link rel="icon" href="https://scontent.fmnl25-2.fna.fbcdn.net/v/t1.15752-9/462645432_2278241859209808_706359030160949057_n.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        nav {
+            background-color: #8a6851;
+        }
+
+        .recipe-img {
+            height: 300px;
+            width: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .recipe-img:hover {
+            transform: scale(1.1);
+            z-index: 2;
+        }
+
+        .recipe-card {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container1 {
+            background-color: rgba(222, 170, 121, 0.7);
+            width: 800px;
+            border-radius: 40px;
+        }
+
+        .lucasreyes {
+            transition: 0.3s;
+        }
+        .lucasreyes:hover {
+            transform: scale(1.05);
+            z-index: 2;
+            transition: 0.1;
+        }
+
+        .navbar-brand img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .navbar-nav .nav-link {
+            color: black;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f8f9fa;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.15752-9/462645432_2278241859209808_706359030160949057_n.png?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEzDsObQRzruNoIY4nCuC0il9fuKbav9PSX1-4ptq_09ObFblvR2ckBUmv2TGrAIr5apvRQtt2n9GtajIF2_d4V&_nc_ohc=ACONuqeDU0MQ7kNvgEwRz1K&_nc_zt=23&_nc_ht=scontent.fmnl4-6.fna&oh=03_Q7cD1QHuxm9mtNN7dlB_Zceh1pMouu_OUoFdWja5KHz-RN0Bcw&oe=677F1057" alt="Logo">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="breakfast.html">Breakfast</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lunch.html">Lunch</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dinner.html">Dinner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dessertsandbeverages.html">Desserts and Beverages</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control" type="text" placeholder="Search...">
+                    <button class="btn btn-warning" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main class="container mt-5 pt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-3 recipe-card">
+                <img src="https://www.cookingclassy.com/wp-content/uploads/2022/12/chicken-cordon-bleu-4.jpg" alt="Cordon bleu" class="recipe-img">
+                <button class="btn btn-warning mt-3" onclick="showRecipe('recipeTable1')">Cordon bleu Recipe</button>
+                <div id="recipeTable1" class="mt-3" style="display: none;">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Ingredients/Quantity</th>
+                                <th>Instructions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4 skinless, boneless chicken breast halves</td>
+                                <td>Gather all ingredients. Preheat oven to 350 degrees F (175 degrees C). Coat a 7x11-inch baking dish with nonstick cooking spray.</td>
+                            </tr>
+                            <tr>
+                                <td>¼ teaspoon salt</td>
+                                <td>Pound chicken breasts to 1/4 inch thickness.</td>
+                            </tr>
+                            <tr>
+                                <td>⅛ teaspoon ground black pepper</td>
+                                <td>Sprinkle each piece of chicken on both sides with salt and pepper. Place 1 Swiss cheese slice and 1 ham slice on top of each breast.</td>
+                            </tr>
+                            <tr>
+                                <td>6 slices Swiss cheese</td>
+                                <td>Roll up each breast and secure with toothpicks. Place in the prepared baking dish and sprinkle chicken evenly with bread crumbs.</td>
+                            </tr>
+                            <tr>
+                                <td>4 slices cooked ham</td>
+                                <td>Bake in the preheated oven until chicken is no longer pink, 30 to 35 minutes. Remove from the oven, and place 1/2 Swiss cheese slice on top of each breast.</td>
+                            </tr>
+                            <tr>
+                                <td>½ cup seasoned bread crumbs</td>
+                                
+                                <td>Return to the oven until cheese has melted, 3 to 5 minutes. Remove toothpicks and serve immediately.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-md-3 recipe-card">
+                <img src="https://iankewks.com/wp-content/uploads/2023/02/IMG_7014.jpg" alt="Pork sisig" class="recipe-img">
+                <button class="btn btn-warning mt-3" onclick="showRecipe('recipeTable2')">Sisig Recipe</button>
+                <div id="recipeTable2" class="mt-3" style="display: none;">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Ingredients</th>
+                                <th>Quantity</th>
+                                <th>Instructions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pork belly</td>
+                                <td>1 lb</td>
+                                <td>Combine pork belly, face, ears, vinegar, soy sauce in a stock pot. Fill with water until meat is covered.  Add bay leaves, salt, and peppercorns. Bring to a boil then simmer for at least an hour or until meat is no longer tight and tough.</td>
+                            </tr>
+                            <tr>
+                                <td>pork snout</td>
+                                <td>1 whole</td>
+                                <td> Remove meat from pot and grill for 10 minutes.</td>
+                            </tr>
+                            <tr>
+                                <td>Vinegar</td>
+                                <td>1 tablespoon white sugar</td>
+                                <td>Chop pork belly and face meat into 1/4 - 1/2 inch cubes.  Finely chop pig ear pieces.</td>
+                            </tr>
+                            <tr>
+                                <td>Soy sauce</td>
+                                <td>¼ teaspoon salt, or more to taste</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>12 garlic cloves</td>
+                                <td>1 head of garlic’s worth</td>
+                                <td>Combine wet ingredients and add to dry mix.</td>
+                            </tr>
+                            <tr>
+                                <td>Bay leaves</td>
+                                <td>2</td>
+                                <td>Beat and mix into the batter.</td>
+                            </tr>
+                            <tr>
+                                <td>1 T salt 
+
+                                1/2 t peppercorns
+
+                                1 - sisig seasoning packet, or: 1/4 c kalamansi juice 1/4 c vinegar 1 t salt 1/2 t ground pepper 1 t garlic powder I T oil 10 thai chilis, chopped 3/4 c chopped shallots (can also use red onion) 1/4 c mayonnaise 1 egg, for topping 1 T butter (optional)</td>
+                                <td></td>
+                                <td>Pour batter onto a hot griddle, cook until golden brown on each side.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-md-3 recipe-card">
+                <img src="https://panlasangpinoy.com/wp-content/uploads/2021/04/Bicol-Express-1.jpg" alt="Almond Scones" class="recipe-img">
+                <button class="btn btn-warning mt-3" onclick="showRecipe('recipeTable3')">Bicol Express Recipe</button>
+                <div id="recipeTable3" class="mt-3" style="display: none;">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Ingredients/Quantity</th>
+                                <th>Instructions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1 tablespoon oil</td>
+                                <td>Mix with other dry ingredients.</td>
+                            </tr>
+                            <tr>
+                                <td>1 onion, peeled and sliced thinly</td>
+                                <td>Mix with flour.</td>
+                            </tr>
+                            <tr>
+                                <td>4 cloves garlic, peeled and minced</td>
+                                <td>Add to the dry ingredients.</td>
+                            </tr>
+                            <tr>
+                                <td>2 pounds pork belly, cut into 1-inch cubes</td>
+                                <td>Mix into the dry ingredients.</td>
+                            </tr>
+                            <tr>
+                                <td>2 tablespoons fresh shrimp paste</td>
+                                <td>Combine wet ingredients and add to dry mixture.</td>
+                            </tr>
+                            <tr>
+                                <td>1 can (13.5 ounces) coconut milk 1 cup water</td>
+                                <td>Beat and add to the dough.</td>
+                            </tr>
+                            <tr>
+                                <td>14 pieces Thai chili peppers, stemmed and minced 2 cups finger chilies (siling haba), sliced</td>
+                                <td>Shape into scones and bake for 15-20 minutes at 375°F (190°C).</td>
+                            </tr>
+                             <tr>
+                                <td>2 cups finger chilies (siling haba), sliced 1 cup coconut cream salt and pepper to taste</td>
+                                <td>Shape into scones and bake for 15-20 minutes at 375°F (190°C).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        function showRecipe(id) {
+            const recipeTable = document.getElementById(id);
+            recipeTable.style.display = recipeTable.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
